@@ -20,4 +20,57 @@ public class Pelicula{
         this.notas = notas;
     }
 
+    //Setters 
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+
+    public void setAño(int año){
+        this.año = año;
+    }
+
+    public void setCalificacion(float calificacion){
+        this.calificacion = calificacion;
+    }
+
+    public void setNotas(String notas){
+        this.notas = notas;
+    }
+
+
+    //getters 
+
+    public int getId(){
+        return id;
+    }
+
+    public String getNombre(){
+        return nombre;
+    }
+
+    public int getAño(){
+        return año;
+    }
+
+    public float getCalifiacion(){
+        return calificacion;
+    }
+
+    public String getNotas(){
+        return notas;
+    }
+
+
+
+    @Override
+    public String toString(){
+        return "Id: " + id + "\nNombre: " + nombre + "\nAño" + año + "\nCalificación: " + calificacion + "\nNotas:" + notas;
+    }
+
+
 }
