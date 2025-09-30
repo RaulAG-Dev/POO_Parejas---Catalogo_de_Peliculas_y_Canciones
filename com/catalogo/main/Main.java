@@ -1,3 +1,9 @@
+package com.catalogo.main;
+import com.catalogo.peliculas.ControladorPelicula;
+import com.catalogo.peliculas.Pelicula;
+import com.catalogo.canciones.ControladorCancion;
+import com.catalogo.canciones.Cancion;
+import java.util.Scanner;
 import java.util.Scanner;
 
 public class Main {
