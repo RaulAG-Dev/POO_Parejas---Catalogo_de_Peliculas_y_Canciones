@@ -1,0 +1,34 @@
+package org.proyecto.cancion;
+
+import java.util.ArrayList;
+
+public class ControladorCanciones {
+    private ArrayList<Cancion> canciones;
+
+    public ControladorCanciones() {
+        canciones = new ArrayList<>();
+    }
+
+    public void agregarCancion(Cancion c) {
+        canciones.add(c);
+    }
+
+    public boolean eliminarCancion(String nombre) {
+        return canciones.removeIf(c -> c.getNombre().equalsIgnoreCase(nombre));
+    }
+
+    public Cancion buscarCancion(String nombre) {
+        for (Cancion c : canciones) {
+            if (c.getNombre().equalsIgnoreCase(nombre)) {
+                return c;
+            }
+        }
+        return null;
+    }
+
+    public void listarCanciones() {
+        for (Cancion c : canciones) {
+            System.out.println(c);
+        }
+    }
+}
