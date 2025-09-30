@@ -1,0 +1,56 @@
+package org.proyecto.cancion;
+
+public class Cancion{
+    private int id;
+    private String nombre;
+    private String cantante;
+    private int calificacion;
+    private String notas;
+
+    public Cancion(){}
+    public Cancion(int id, String nombre, String cantante, int calificacion, String notas){
+        this.id = id;
+        this.nombre = nombre;
+        this.cantante = cantante;
+        this.calificacion = calificacion;
+        this.notas = notas;
+
+    }
+
+    // Getters
+    public int getId() {
+         return id; }
+    public String getNombre() { 
+        return nombre; }
+    public String getCantante() { 
+        return cantante; }
+    public int getCalificacion() {
+         return calificacion; }
+    public String getNotas() { 
+        return notas; }
+
+    // Setters
+    public void setId(int id) {
+         this.id = id; }
+    public void setNombre(String nombre) { 
+        this.nombre = nombre; }
+    public void setCantante(String cantante) { 
+        this.cantante = cantante; }
+    public void setCalificacion(int calificacion) {
+         this.calificacion = calificacion; }
+    public void setNotas(String notas) {
+         this.notas = notas; }
+
+         
+  @Override
+    public String toString() {
+        return "Cancion{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", cantante='" + cantante + '\'' +
+                ", calificacion=" + calificacion +
+                ", notas='" + notas + '\'' +
+                '}';
+}
+
+}
