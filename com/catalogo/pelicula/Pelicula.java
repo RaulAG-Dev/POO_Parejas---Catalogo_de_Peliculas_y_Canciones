@@ -1,13 +1,15 @@
+package com.catalogo.peliculas;
+
 public class Pelicula{
 
-    //Atributos 
     private int id;
     private int año;
     private float calificacion;
     private String nombre;
     private String notas;
 
-    //Constructores
+
+
     public Pelicula(){
 
     }
@@ -19,8 +21,6 @@ public class Pelicula{
         this.calificacion = calificacion;
         this.notas = notas;
     }
-
-    //Setters 
 
     public void setId(int id){
         this.id = id;
@@ -43,7 +43,6 @@ public class Pelicula{
     }
 
 
-    //getters 
 
     public int getId(){
         return id;
